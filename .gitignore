@@ -40,9 +40,6 @@
 !.env.example
 phpcs.cache
 
-# WP Config
-wp-config.php
-
 # WP-CLI
 wp-cli.local.yml
 
