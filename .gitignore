@@ -1,0 +1,112 @@
+### Ignore all but the project
+*
+!/dev-docker
+!/dev-docker/**
+!/dev-docs
+!/dev-docs/**
+!.gitignore
+!.env.example
+!.dockerignore
+!.editorconfig
+!.env.example
+!.htaccess.example
+!composer.json
+!composer.lock
+!docker-compose.yml
+!docker-compose.nginx.yml
+!LICENSE.md
+!README.md
+!wp-cli.yml
+!wp-config.php
+!wp-content
+!wp-app
+
+!package.json
+!package-lock.json
+!yarn.lock
+!/postcss.config.js
+!/webpack*
+!/wp-enpii-base-artisan
+!phpcs.xml.dist
+!phpstan.neon.dist
+!.coderabbit.yaml
+!.githooks/
+!.githooks/**
+
+### This Project
+# Dotenv
+.env
+.env.*
+!.env.example
+phpcs.cache
+
+# WP-CLI
+wp-cli.local.yml
+
+# Docker compose
+docker-compose.override.yml
+docker-compose.local.yml
+
+assets
+!assets/src
+!assets/dist
+
+### Popular
+# package management
+vendor
+node_modules
+
+# others
+cgi-bin
+
+# zip files
+*.zip
+*.tar.gz
+
+# sass
+.sass-cache
+
+# .vscode
+.vscode
+
+# phpstorm project files
+.idea
+.DS_Store
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+__MACOSX/
+
+# phpunit itself is not needed
+phpunit.phar
+
+#robot file
+robots.txt
+
+#prepros file
+prepros.cfg
+
+# applications
+# CodeKit
+config.codekit
+.codekit-cache
+
+# WordPress
+docker/wp-config.php
+
+# Logs
+*.log
