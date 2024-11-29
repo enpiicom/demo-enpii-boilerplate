@@ -24,6 +24,7 @@
 !package.json
 !package-lock.json
 !yarn.lock
+!tsconfig.json
 !/postcss.config.js
 !/webpack*
 !/wp-enpii-base-artisan
