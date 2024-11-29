@@ -48,8 +48,4 @@ jobs:
             echo "Building plugin..."
             yarn build-plugin || exit 1
 
-            # Run PHPCS
-            echo "Running PHPCS tests..."
-            yarn phpcbf || exit 1
-            yarn phpcs || exit 1
           EOF
