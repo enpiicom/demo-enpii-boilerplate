@@ -32,6 +32,9 @@
 !.coderabbit.yaml
 !.githooks/
 !.githooks/**
+!.coderabbit.yaml
+!.github/
+!.github/**
 
 ### This Project
 # Dotenv
