@@ -33,13 +33,15 @@
 !.githooks/
 !.githooks/**
 
-wp-config.php
 ### This Project
 # Dotenv
 .env
 .env.*
 !.env.example
 phpcs.cache
+
+# WP Config
+wp-config.php
 
 # WP-CLI
 wp-cli.local.yml
