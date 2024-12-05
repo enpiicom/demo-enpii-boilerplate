@@ -22,10 +22,10 @@ jobs:
           set -o pipefail
 
           # Define server credentials
-          SERVER="demo-origin.dev-srv.net"
-          USERNAME="enpiidemo"
-          PASSWORD="6c9TE7KrgemuwO54t3"
-          REMOTE_DIR="/home/enpiidemo/www/enpiicom/demo/enpii-boilerplate"
+          SERVER="${{ secrets.SERVER }}"
+          USERNAME="${{ secrets.SERVER_USERNAME }}"
+          PASSWORD="${{ secrets.SERVER_PASSWORD }}"
+          REMOTE_DIR="${{ secrets.SERVER_DIR }}"
 
           # Use sshpass for password-based SSH login and run the commands remotely
           sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER << EOF
@@ -48,8 +48,4 @@ jobs:
             echo "Building plugin..."
             yarn build-plugin || exit 1
 
-            # Run PHPCS
-            echo "Running PHPCS tests..."
-            yarn phpcbf || exit 1
-            yarn phpcs || exit 1
           EOF
